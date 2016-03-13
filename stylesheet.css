@@ -1,0 +1,24 @@
+h1#topline {
+  font-family: "Courier New", monospace;
+  color: #6F2121;
+  text-align: center;
+  font-size: 3em;
+}
+h2 {
+  text-align: center;
+}
+p {
+  text-align: center;
+}
+h3 {
+  font-family: "Courier New", monospace;
+  color: #216f6f;
+  text-align: center;
+}
+div {
+  text-align: center;
+}
+ul {
+  width: 20%;
+  margin:auto;
+}
