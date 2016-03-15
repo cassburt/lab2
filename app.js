@@ -52,7 +52,7 @@ var gameStart = prompt("Hello "+username+", would you like to play a game?");
         alert("Sorry, too low");
         console.log(username+"guessed too low.");
       }
-      alert("Well, I hope that was as fun for you as it was for me. Your score was "+score+" That's right. Count it with me:");
+      alert("Well, I hope that was as fun for you as it was for me. Your score was "+score+"! That's right - count it with me:");
       for (var count = 1; count <= score; count++) {
         alert(count);
         console.log("user score reported");
