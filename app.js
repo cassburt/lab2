@@ -7,7 +7,7 @@ while (gameStart.toLowerCase() !="yes" && gameStart.toLowerCase() !="no") {
     alert("OK, great! Here we go....");
     var score=0;
     console.log(username+" has chosen to play the game");
-      var hometown = prompt("OK "+username+", was I born in Ohio?");
+      var hometown = prompt("OK "+username+", let's start with an easy  one. Was I born in Ohio?");
       while (hometown.toLowerCase() != "yes" && hometown.toLowerCase() != "no") {
         hometown = prompt("Can't understand you, "+username+". Am I a buckeye?");
       }
