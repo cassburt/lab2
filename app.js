@@ -1,5 +1,8 @@
 var username = prompt("Hi! What's your name?");
-var gameStart = prompt("Hello "+username+", would you like to play a game?");
+var gameStart ="";
+while (gameStart.toLowerCase() != "yes" && gameStart.toLowerCase() != "no") {
+  var gameStart = prompt("Hello "+username+", would you like to play a game?");
+  }
   if (gameStart.toLowerCase() == "yes") {
     alert("OK, great! Here we go....");
     var score=0;
