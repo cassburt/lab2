@@ -1,5 +1,5 @@
 //Welcome: Say hello to the user and ask their name
-var username = prompt("Hi! What's your name?");
+/*var username = prompt("Hi! What's your name?");
 
 //Invite: Ask the user if they would like to play
 var gameStart = prompt("Hello "+username+" , would you like to play a game?");
@@ -16,7 +16,20 @@ while (gameStart.toLowerCase() !="yes" && gameStart.toLowerCase() !="no") {
       //Question One: Hometown
       var hometown = prompt("OK "+username+", let's start with an easy  one. Was I born in Ohio?");
       while (hometown.toLowerCase() != "yes" && hometown.toLowerCase() != "no") {
-        hometown = prompt("Can't understand you, "+username+". Am I a buckeye?");
+*/
+
+var homeTown = prompt("Where was I born?");
+var study = prompt("Where did I study abroad?");
+var job = prompt("What was my first job in CA?");
+document.getElemntById("origin").innerHTML = homeTown
+document.getElemntById("school").innerHTML = study
+document.getElemntById("work").innerHTML = job
+
+
+
+
+
+  /*      hometown = prompt("Can't understand you, "+username+". Am I a buckeye?");
       }
       if (hometown.toLowerCase() == "no") {
         alert("Yay! You got that one right!");
