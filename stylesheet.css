@@ -1,18 +1,38 @@
-h1#topline {
-  font-family: "Courier New", monospace;
+h1 {
+  font-family: 'Lucida Sans Typewriter', monospace;
   color: #6F2121;
   text-align: center;
   font-size: 3em;
 }
 h2 {
+  font-family: 'Lucida Sans Typewriter', monospace;
+  font-style: italic;
+  color: #E29D9D;
   text-align: center;
-}
-p {
-  text-align: center;
+  font-size: 2em;
 }
 h3 {
-  font-family: "Courier New", monospace;
-  color: #216f6f;
+  font-family: 'Lucida Sans Typewriter', monospace;
+  color: #6F2121;
+  text-align: center;
+  font-size: 1.5em;
+}
+#origin {
+  text-align: center;
+  color: #216E21;
+  font-style: italic;
+}
+#school {
+  text-align: center;
+  color: #216E21;
+  font-style: italic;
+}
+#work {
+  text-align: center;
+  color: #216E21;
+  font-style: italic;
+}
+p {
   text-align: center;
 }
 div {
