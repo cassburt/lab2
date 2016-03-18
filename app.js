@@ -54,7 +54,7 @@ while (gameStart.toLowerCase() !="yes" && gameStart.toLowerCase() !="no") {
         console.log(username+" answered question incorrectly");
       }
 
-      //Stretch: Guess the Number
+      //Question Four (Stretch): Guess the Number
       var numGuess = prompt("Ok, "+username+", one more: I'm thinking of a number between 1 and 10. What is it?");
       if (numGuess == 5) {
         alert("Well how about that - you guessed it! You're good.");
@@ -68,7 +68,7 @@ while (gameStart.toLowerCase() !="yes" && gameStart.toLowerCase() !="no") {
         console.log(username+"guessed too low.");
       }
 
-      //Stretch: User score
+      //Question Five (Stretch): User score
       alert("Well, I hope that was as fun for you as it was for me. Your score was "+score+"! That's right - count it with me:");
       for (var count = 1; count <= score; count++) {
         alert(count);
