@@ -3,15 +3,18 @@ var username = prompt("Hi! What's your name?");
 
 //Invite: Ask the user if they would like to play
 var gameStart = prompt("Hello "+username+" , would you like to play a game?");
-while (gameStart.toLowerCase() != "yes" && gameStart.toLowerCase() != "no") {
+while (gameStart.toLowerCase() != "yes" && gameStart.toLowerCase() != "y" && gameStart.toLowerCase() != "no") {
   gameStart = prompt("I'm sorry, I didn't catch that. Would you like to play?");
 }
 
 //Rules: Give the user the rules of the game
-if (gameStart.toLowerCase() == "yes") {
+if (gameStart.toLowerCase() == "yes" || gameStart.toLowerCase() == "y") {
   gameStart = alert("let's play a game. Fill in my bio by answering the questions that follow.");
-  //gameStart = alert("Correct answers will appear in GREEN, incorrect ones will appear in RED. Good luck!");
-
+  //Game condensed:
+  //var guess = prompt(ask);
+  //if answer == true {
+  //}
+  
   //Game: Have the user fill in the blanks
   var homeTown = prompt("Let's begin with an easy one. In which state was I born?");
   if (homeTown.toLowerCase() == "in" || homeTown.toLowerCase() == "indiana") {
@@ -25,7 +28,6 @@ if (gameStart.toLowerCase() == "yes") {
   } else {
     (document.getElementById("school").innerHTML = "WRONG!");
   }
-
   var job = prompt("What was my first job in California?");
   if (job.toLowerCase() == "author" || job.toLowerCase() == "writer") {
     (document.getElementById("work").innerHTML = job);
