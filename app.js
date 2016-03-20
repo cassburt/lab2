@@ -15,22 +15,32 @@ if (gameStart.toLowerCase() == "yes") {
   //Game: Have the user fill in the blanks
   var homeTown = prompt("Let's begin with an easy one. In which state was I born?");
   if (homeTown.toLowerCase() == "in" || homeTown.toLowerCase() == "indiana") {
-    (document.getElementById("origin").innerHTML = homeTown);
+    document.getElementById("origin").innerHTML = homeTown + "<br>" + "<img src='indiana.png'>";
+
+
+
   } else {
     (document.getElementById("origin").innerHTML = "WRONG!");
+    var myElement = document.querySelector("#origin");
+    myElement.style.color = "red";
+
   }
   var study = prompt("In which country did I teach abroad?");
   if (study.toLowerCase() == "italy" || study.toLowerCase() == "poland") {
-    (document.getElementById("school").innerHTML = study);
+    (document.getElementById("school").innerHTML = study + "<br>" + "<img src='italy.png'>");
   } else {
     (document.getElementById("school").innerHTML = "WRONG!");
+    var myElement = document.querySelector("#school");
+    myElement.style.color = "red";
   }
 
   var job = prompt("What was my first job in California?");
   if (job.toLowerCase() == "author" || job.toLowerCase() == "writer") {
-    (document.getElementById("work").innerHTML = job);
+    (document.getElementById("work").innerHTML = job + "<br>" + "<img src='writer.jpeg'>");
   } else {
     (document.getElementById("work").innerHTML = "WRONG!");
+    var myElement = document.querySelector("#work");
+    myElement.style.color = "red";
   }
 
 //Rejection: If the user decides not to play

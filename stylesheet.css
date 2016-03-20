@@ -13,25 +13,26 @@ h2 {
 }
 h3 {
   font-family: 'Lucida Sans Typewriter', monospace;
-  color: #216E21;
+  color: #6F2121;
   text-align: center;
   font-size: 1.5em;
 }
+
 #origin {
   text-align: center;
-  color: #6F2121;
+  color: #216E21;
   font-style: italic;
   font-size: 1.5em;
 }
 #school {
   text-align: center;
-  color: #6F2121;
+  color: #216E21;
   font-style: italic;
   font-size: 1.5em;
 }
 #work {
   text-align: center;
-  color: #6F2121;
+  color: #216E21;
   font-style: italic;
   font-size: 1.5em;
 }
