@@ -10,23 +10,29 @@ while (gameStart.toLowerCase() != "yes" && gameStart.toLowerCase() != "no") {
 //Rules: Give the user the rules of the game
 if (gameStart.toLowerCase() == "yes") {
   gameStart = alert("let's play a game. Fill in my bio by answering the questions that follow.");
-  gameStart = alert("Correct answers will appear in GREEN, incorrect ones will appear in RED. Good luck!");
+  //gameStart = alert("Correct answers will appear in GREEN, incorrect ones will appear in RED. Good luck!");
 
   //Game: Have the user fill in the blanks
-  var homeTown = prompt("Let's begin with an easy one. Where was I born?");
-  if (homeTown.toLowerCase() == "in", "indiana") {
-  //  ("origin" = documcolor: GREEN);
-    alert("great job!");
+  var homeTown = prompt("Let's begin with an easy one. In which state was I born?");
+  if (homeTown.toLowerCase() == "in" || homeTown.toLowerCase() == "indiana") {
+    (document.getElementById("origin").innerHTML = homeTown);
   } else {
-   //"origin" = RED;
-   alert("suck it!");
+    (document.getElementById("origin").innerHTML = "WRONG!");
   }
-  var study = prompt("Where did I teach abroad?");
-  var job = prompt("What was my first job in CA?");
+  var study = prompt("In which country did I teach abroad?");
+  if (study.toLowerCase() == "italy" || study.toLowerCase() == "poland") {
+    (document.getElementById("school").innerHTML = study);
+  } else {
+    (document.getElementById("school").innerHTML = "WRONG!");
+  }
 
-  document.getElementById("school").innerHTML = study;
-  document.getElementById("work").innerHTML = job;
-  document.getElementById("origin").innerHTML = homeTown;
+  var job = prompt("What was my first job in California?");
+  if (job.toLowerCase() == "author" || job.toLowerCase() == "writer") {
+    (document.getElementById("work").innerHTML = job);
+  } else {
+    (document.getElementById("work").innerHTML = "WRONG!");
+  }
+
 //Rejection: If the user decides not to play
 } else {
       alert("Fine, be that way, I don't want to play with you anyway. Just go away. You're ugly. And a jerk. Call me.");
