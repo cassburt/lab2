@@ -14,19 +14,15 @@ if (gameStart.toLowerCase() == "yes" || gameStart.toLowerCase() == "y") {
   //var guess = prompt(ask);
   //if answer == true {
   //}
-  
+
   //Game: Have the user fill in the blanks
   var homeTown = prompt("Let's begin with an easy one. In which state was I born?");
   if (homeTown.toLowerCase() == "in" || homeTown.toLowerCase() == "indiana") {
     document.getElementById("origin").innerHTML = homeTown + "<br>" + "<img src='indiana.png'>";
-
-
-
   } else {
     (document.getElementById("origin").innerHTML = "WRONG!");
     var myElement = document.querySelector("#origin");
     myElement.style.color = "red";
-
   }
   var study = prompt("In which country did I teach abroad?");
   if (study.toLowerCase() == "italy" || study.toLowerCase() == "poland") {
